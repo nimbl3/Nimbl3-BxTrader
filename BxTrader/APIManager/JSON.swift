@@ -6,4 +6,4 @@
 //  Copyright © 2560 Issarapong Poesua. All rights reserved.
 //
 
-typealias JSONResponse = [String: Any]
+typealias JSON = [String: Any]
