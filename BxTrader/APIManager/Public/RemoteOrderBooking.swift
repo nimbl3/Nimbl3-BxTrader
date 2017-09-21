@@ -7,7 +7,8 @@
 //
 
 import UIKit
+import RxSwift
 
 class RemoteOrderBooking: NSObject {
-
+    func getOrder() -> Observabl<[]>
 }

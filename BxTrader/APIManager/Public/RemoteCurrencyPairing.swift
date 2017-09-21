@@ -28,9 +28,9 @@ class RemoteCurrencyPairing {
                                 pairings.append(pairingObject)
                             }
                         }
-                        observer.onNext(pairings)
-                        observer.onCompleted()
                     }
+                    observer.onNext(pairings)
+                    observer.onCompleted()
                 }
             }
             return Disposables.create()
@@ -39,6 +39,6 @@ class RemoteCurrencyPairing {
 }
 
 extension RemoteCurrencyPairing {
-    var tickerURL: String { return "https://bx.in.th/api/" }
+    fileprivate var tickerURL: String { return "https://bx.in.th/api/" }
 }
 

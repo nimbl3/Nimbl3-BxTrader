@@ -93,16 +93,32 @@
 		9E412CB91F73B760004765F8 /* BxTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9E412CC61F73B760004765F8 /* Info.plist */,
+				9E412CBC1F73B760004765F8 /* ViewController.swift */,
 				9EEDF9CD1F73BE6000D32D52 /* APIManager */,
 				9EEDF9C51F73BA2F00D32D52 /* Models */,
-				9E412CBA1F73B760004765F8 /* AppDelegate.swift */,
-				9E412CBC1F73B760004765F8 /* ViewController.swift */,
-				9E412CBE1F73B760004765F8 /* Main.storyboard */,
-				9E412CC11F73B760004765F8 /* Assets.xcassets */,
-				9E412CC31F73B760004765F8 /* LaunchScreen.storyboard */,
-				9E412CC61F73B760004765F8 /* Info.plist */,
+				9E850F6E1F741B9200C45352 /* Storyboards */,
+				9E850F6F1F741B9F00C45352 /* Supporting Files */,
 			);
 			path = BxTrader;
+			sourceTree = "<group>";
+		};
+		9E850F6E1F741B9200C45352 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9E412CBE1F73B760004765F8 /* Main.storyboard */,
+				9E412CC31F73B760004765F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9E850F6F1F741B9F00C45352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E412CBA1F73B760004765F8 /* AppDelegate.swift */,
+				9E412CC11F73B760004765F8 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9EEDF9C51F73BA2F00D32D52 /* Models */ = {
