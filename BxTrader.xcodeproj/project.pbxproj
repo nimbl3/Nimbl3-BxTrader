@@ -13,6 +13,8 @@
 		9E412CC21F73B760004765F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E412CC11F73B760004765F8 /* Assets.xcassets */; };
 		9E412CC51F73B760004765F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E412CC31F73B760004765F8 /* LaunchScreen.storyboard */; };
 		9E850F711F74232600C45352 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F701F74232600C45352 /* APIError.swift */; };
+		9E850F751F742BAE00C45352 /* OrderBookingPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F741F742BAE00C45352 /* OrderBookingPair.swift */; };
+		9E850F781F7437E000C45352 /* Double+RoundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F771F7437E000C45352 /* Double+RoundTo.swift */; };
 		9EEDF9C71F73BA6E00D32D52 /* Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9C61F73BA6E00D32D52 /* Pairing.swift */; };
 		9EEDF9C91F73BBC500D32D52 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9C81F73BBC500D32D52 /* Ticker.swift */; };
 		9EEDF9CB1F73BC6200D32D52 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9CA1F73BC6200D32D52 /* OrderBook.swift */; };
@@ -39,6 +41,8 @@
 		9E412CC41F73B760004765F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E412CC61F73B760004765F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E850F701F74232600C45352 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		9E850F741F742BAE00C45352 /* OrderBookingPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookingPair.swift; sourceTree = "<group>"; };
+		9E850F771F7437E000C45352 /* Double+RoundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundTo.swift"; sourceTree = "<group>"; };
 		9EEDF9C61F73BA6E00D32D52 /* Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pairing.swift; sourceTree = "<group>"; };
 		9EEDF9C81F73BBC500D32D52 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		9EEDF9CA1F73BC6200D32D52 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		9E412CB91F73B760004765F8 /* BxTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9E850F761F7437C800C45352 /* Extension */,
 				9E412CC61F73B760004765F8 /* Info.plist */,
 				9E412CBC1F73B760004765F8 /* ViewController.swift */,
 				9EEDF9CD1F73BE6000D32D52 /* APIManager */,
@@ -123,12 +128,21 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9E850F761F7437C800C45352 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9E850F771F7437E000C45352 /* Double+RoundTo.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9EEDF9C51F73BA2F00D32D52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9EEDF9C61F73BA6E00D32D52 /* Pairing.swift */,
 				9EEDF9C81F73BBC500D32D52 /* Ticker.swift */,
 				9EEDF9CA1F73BC6200D32D52 /* OrderBook.swift */,
+				9E850F741F742BAE00C45352 /* OrderBookingPair.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,8 +329,10 @@
 			files = (
 				9EEDF9CF1F73BE7500D32D52 /* APIManager.swift in Sources */,
 				9EEDF9CB1F73BC6200D32D52 /* OrderBook.swift in Sources */,
+				9E850F751F742BAE00C45352 /* OrderBookingPair.swift in Sources */,
 				9EEDF9EB1F73C17800D32D52 /* RemoteWallet.swift in Sources */,
 				9EEDF9D11F73BEB000D32D52 /* RemoteTicker.swift in Sources */,
+				9E850F781F7437E000C45352 /* Double+RoundTo.swift in Sources */,
 				9EEDF9D51F73BF3200D32D52 /* RemoteOrderBooking.swift in Sources */,
 				9E412CBD1F73B760004765F8 /* ViewController.swift in Sources */,
 				9EEDF9F91F73C75D00D32D52 /* JSON.swift in Sources */,

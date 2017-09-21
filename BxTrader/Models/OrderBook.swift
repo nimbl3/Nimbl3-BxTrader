@@ -7,21 +7,12 @@
 //
 
 import UIKit
-import ObjectMapper
 
-class OrderBook: Mappable {
-    
-    var highBid: Double = 0
-    var total: Int = 0
-    var volume: Double = 0
-    
-    required init?(map: Map) {
-        
+struct OrderBook {
+    var asks: [OrderBookingPair]
+    var bids: [OrderBookingPair]
+    init(asks: [OrderBookingPair], bids: [OrderBookingPair]) {
+        self.asks = asks
+        self.bids = bids
     }
-    func mapping(map: Map) {
-        highBid <- map["highbid"]
-        total <- map["total"]
-        volume <- map["volume"]
-    }
-    
 }

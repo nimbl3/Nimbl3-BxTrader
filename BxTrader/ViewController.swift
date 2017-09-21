@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        APIManager
+            .sharedInstance
+            .publicAPI
+            .remoteOrderBooking
+            .getOrderBooking(with: 1)
+            .subscribe().addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
