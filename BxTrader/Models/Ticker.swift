@@ -11,19 +11,25 @@ import ObjectMapper
 
 class Ticker: Mappable {
     
-    var change: Double = 0
-    var lastPrice: Double = 0
-    var orderBook: [OrderBook] = []
     var pairingID: Int = 0
     var primaryCurrency: String = ""
     var secondaryCurrency: String = ""
+    var change: Double = 0
+    var lastPrice: Double = 0
     var volume24Hours: Double = 0
+    var orderBook: [OrderBook] = []
 
     required init?(map: Map) {
         
     }
     func mapping(map: Map) {
-        
+        pairingID <- map["pairing_id"]
+        primaryCurrency <- map["primary_currency"]
+        secondaryCurrency <- map["secondary_currency"]
+        change <- map["change"]
+        lastPrice <- map["last_price"]
+        volume24Hours <- map["volume_24hours"]
+        orderBook <- map["orderbook"]
     }
     
 }
