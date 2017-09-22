@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class APIManager: NSObject {
     
-    private var nounce: Int = 0
-    
     static let sharedInstance = APIManager()
+    
+    var apiKey: String {
+        set { UserDefaults.standard.set(newValue, forKey: "apiKey") }
+        get { return UserDefaults.standard.object(forKey: "apiKey") as? String ?? "" }
+    }
+    var apiSecret: String {
+        set { UserDefaults.standard.set(newValue, forKey: "apiSecret") }
+        get { return UserDefaults.standard.object(forKey: "apiSecret") as? String ?? "" }
+    }
+    var nounce: String {
+        return "\(CUnsignedLongLong(NSDate().timeIntervalSince1970))"
+    }
+    var signature: String {
+        let beforeSignature = apiSecret + nounce + apiSecret
+        return beforeSignature.sha256()
+    }
     
     var publicAPI = publicBxAPI()
     var privateAPI = privateBxAPI()
@@ -29,12 +44,5 @@ class APIManager: NSObject {
         var remoteTransactionHistory = RemoteTransactionHistory()
         var remoteWallet = RemoteWallet()
     }
-    
-    func plusNounce() {
-        nounce += 1
-    }
-    
-    func getNounce() -> Int {
-        return nounce
-    }
+
 }
