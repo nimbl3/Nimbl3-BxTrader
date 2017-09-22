@@ -99,13 +99,13 @@
 		9E412CB91F73B760004765F8 /* BxTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9EEDF9CD1F73BE6000D32D52 /* APIManager */,
 				9E850F761F7437C800C45352 /* Extension */,
 				9E412CC61F73B760004765F8 /* Info.plist */,
-				9E412CBC1F73B760004765F8 /* ViewController.swift */,
-				9EEDF9CD1F73BE6000D32D52 /* APIManager */,
 				9EEDF9C51F73BA2F00D32D52 /* Models */,
 				9E850F6E1F741B9200C45352 /* Storyboards */,
 				9E850F6F1F741B9F00C45352 /* Supporting Files */,
+				9E412CBC1F73B760004765F8 /* ViewController.swift */,
 			);
 			path = BxTrader;
 			sourceTree = "<group>";
@@ -285,6 +285,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BxTrader/Pods-BxTrader-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -293,6 +294,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",

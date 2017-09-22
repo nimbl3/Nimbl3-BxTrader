@@ -7,6 +7,7 @@ target 'BxTrader' do
   pod 'AlamofireObjectMapper'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'CryptoSwift'
   # Pods for BxTrader
 
 end
