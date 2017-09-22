@@ -17,7 +17,7 @@ class RemoteOrderBooking: NSObject {
                 if (response.result.isFailure) {
                     return
                 }
-                guard let responseValue = response.result.value as? JSON else { return }
+                guard let responseValue = response.result.value as? [String:Any] else { return }
                 
                 
                 for (key, value) in responseValue {

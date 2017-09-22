@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E16D3961F74FB35000F9C28 /* MakeOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3901F74FB35000F9C28 /* MakeOrderInteractor.swift */; };
+		9E16D3971F74FB35000F9C28 /* MakeOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3911F74FB35000F9C28 /* MakeOrderModels.swift */; };
+		9E16D3981F74FB35000F9C28 /* MakeOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3921F74FB35000F9C28 /* MakeOrderPresenter.swift */; };
+		9E16D3991F74FB35000F9C28 /* MakeOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3931F74FB35000F9C28 /* MakeOrderRouter.swift */; };
+		9E16D39A1F74FB35000F9C28 /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3941F74FB35000F9C28 /* MakeOrderViewController.swift */; };
+		9E16D39B1F74FB35000F9C28 /* MakeOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16D3951F74FB35000F9C28 /* MakeOrderWorker.swift */; };
 		9E412CBB1F73B760004765F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E412CBA1F73B760004765F8 /* AppDelegate.swift */; };
-		9E412CBD1F73B760004765F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E412CBC1F73B760004765F8 /* ViewController.swift */; };
 		9E412CC01F73B760004765F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E412CBE1F73B760004765F8 /* Main.storyboard */; };
 		9E412CC21F73B760004765F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E412CC11F73B760004765F8 /* Assets.xcassets */; };
 		9E412CC51F73B760004765F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E412CC31F73B760004765F8 /* LaunchScreen.storyboard */; };
+		9E5793CC1F74DD68008CED35 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5793CB1F74DD68008CED35 /* CreateOrderResponse.swift */; };
+		9E5793CE1F74DEBE008CED35 /* JSONDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5793CD1F74DEBE008CED35 /* JSONDictionary.swift */; };
+		9E5793D41F74F8C0008CED35 /* CryptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5793D21F74F8C0008CED35 /* CryptoCollectionViewCell.swift */; };
+		9E5793D51F74F8C0008CED35 /* CryptoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5793D31F74F8C0008CED35 /* CryptoCollectionViewCell.xib */; };
 		9E850F711F74232600C45352 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F701F74232600C45352 /* APIError.swift */; };
 		9E850F751F742BAE00C45352 /* OrderBookingPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F741F742BAE00C45352 /* OrderBookingPair.swift */; };
 		9E850F781F7437E000C45352 /* Double+RoundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E850F771F7437E000C45352 /* Double+RoundTo.swift */; };
@@ -26,23 +35,38 @@
 		9EEDF9E31F73BFC900D32D52 /* RemoteTransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9E21F73BFC900D32D52 /* RemoteTransactionHistory.swift */; };
 		9EEDF9E91F73C01300D32D52 /* RemoteOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9E81F73C01300D32D52 /* RemoteOrder.swift */; };
 		9EEDF9EB1F73C17800D32D52 /* RemoteWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9EA1F73C17700D32D52 /* RemoteWallet.swift */; };
-		9EEDF9F91F73C75D00D32D52 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDF9F81F73C75D00D32D52 /* JSON.swift */; };
 		A8B2749FF50AA79276169FA5 /* Pods_BxTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9D90C62913187F177D225E /* Pods_BxTrader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19AFA24FDF14EEC7B53384E7 /* Pods-BxTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxTrader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BxTrader/Pods-BxTrader.debug.xcconfig"; sourceTree = "<group>"; };
 		2C9D90C62913187F177D225E /* Pods_BxTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BxTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E16D3901F74FB35000F9C28 /* MakeOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderInteractor.swift; sourceTree = "<group>"; };
+		9E16D3911F74FB35000F9C28 /* MakeOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderModels.swift; sourceTree = "<group>"; };
+		9E16D3921F74FB35000F9C28 /* MakeOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderPresenter.swift; sourceTree = "<group>"; };
+		9E16D3931F74FB35000F9C28 /* MakeOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderRouter.swift; sourceTree = "<group>"; };
+		9E16D3941F74FB35000F9C28 /* MakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
+		9E16D3951F74FB35000F9C28 /* MakeOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderWorker.swift; sourceTree = "<group>"; };
 		9E412CB71F73B760004765F8 /* BxTrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BxTrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E412CBA1F73B760004765F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E412CBC1F73B760004765F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E412CBF1F73B760004765F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E412CC11F73B760004765F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E412CC41F73B760004765F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E412CC61F73B760004765F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E5793CB1F74DD68008CED35 /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
+		9E5793CD1F74DEBE008CED35 /* JSONDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDictionary.swift; sourceTree = "<group>"; };
+		9E5793D21F74F8C0008CED35 /* CryptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E5793D31F74F8C0008CED35 /* CryptoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCollectionViewCell.xib; sourceTree = "<group>"; };
 		9E850F701F74232600C45352 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9E850F741F742BAE00C45352 /* OrderBookingPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookingPair.swift; sourceTree = "<group>"; };
 		9E850F771F7437E000C45352 /* Double+RoundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundTo.swift"; sourceTree = "<group>"; };
+		9EAED8A01F74FC8B00802651 /* Mark Simonson - Proxima Nova Alt Black-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Black-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A11F74FC8C00802651 /* Mark Simonson - Proxima Nova Semibold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Semibold-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A21F74FC8C00802651 /* Mark Simonson - Proxima Nova Alt Bold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Bold-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A31F74FC8D00802651 /* Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A41F74FC8E00802651 /* Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A51F74FC8F00802651 /* Mark Simonson - Proxima Nova Alt Regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Alt Regular-webfont.ttf"; sourceTree = "<group>"; };
+		9EAED8A71F74FC9100802651 /* Mark Simonson - Proxima Nova Thin-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Thin-webfont.ttf"; sourceTree = "<group>"; };
 		9EEDF9C61F73BA6E00D32D52 /* Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pairing.swift; sourceTree = "<group>"; };
 		9EEDF9C81F73BBC500D32D52 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		9EEDF9CA1F73BC6200D32D52 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
@@ -54,7 +78,6 @@
 		9EEDF9E21F73BFC900D32D52 /* RemoteTransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTransactionHistory.swift; sourceTree = "<group>"; };
 		9EEDF9E81F73C01300D32D52 /* RemoteOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteOrder.swift; sourceTree = "<group>"; };
 		9EEDF9EA1F73C17700D32D52 /* RemoteWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWallet.swift; sourceTree = "<group>"; };
-		9EEDF9F81F73C75D00D32D52 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		E7C1D5FB36979E2CAD1CEA62 /* Pods-BxTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BxTrader.release.xcconfig"; path = "Pods/Target Support Files/Pods-BxTrader/Pods-BxTrader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +101,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E16D38E1F74FB11000F9C28 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9E16D38F1F74FB23000F9C28 /* MakeOrder */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9E16D38F1F74FB23000F9C28 /* MakeOrder */ = {
+			isa = PBXGroup;
+			children = (
+				9E16D3901F74FB35000F9C28 /* MakeOrderInteractor.swift */,
+				9E16D3911F74FB35000F9C28 /* MakeOrderModels.swift */,
+				9E16D3921F74FB35000F9C28 /* MakeOrderPresenter.swift */,
+				9E16D3931F74FB35000F9C28 /* MakeOrderRouter.swift */,
+				9E16D3941F74FB35000F9C28 /* MakeOrderViewController.swift */,
+				9E16D3951F74FB35000F9C28 /* MakeOrderWorker.swift */,
+			);
+			path = MakeOrder;
+			sourceTree = "<group>";
+		};
 		9E412CAE1F73B760004765F8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,15 +143,50 @@
 		9E412CB91F73B760004765F8 /* BxTrader */ = {
 			isa = PBXGroup;
 			children = (
+				9EAED89F1F74FC7F00802651 /* Utilities */,
 				9EEDF9CD1F73BE6000D32D52 /* APIManager */,
 				9E850F761F7437C800C45352 /* Extension */,
 				9E412CC61F73B760004765F8 /* Info.plist */,
 				9EEDF9C51F73BA2F00D32D52 /* Models */,
+				9E16D38E1F74FB11000F9C28 /* Scenes */,
 				9E850F6E1F741B9200C45352 /* Storyboards */,
 				9E850F6F1F741B9F00C45352 /* Supporting Files */,
-				9E412CBC1F73B760004765F8 /* ViewController.swift */,
+				9E5793CF1F74F885008CED35 /* Views */,
 			);
 			path = BxTrader;
+			sourceTree = "<group>";
+		};
+		9E5793CA1F74DD50008CED35 /* APIResponse */ = {
+			isa = PBXGroup;
+			children = (
+				9E5793CB1F74DD68008CED35 /* CreateOrderResponse.swift */,
+			);
+			path = APIResponse;
+			sourceTree = "<group>";
+		};
+		9E5793CF1F74F885008CED35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E5793D61F74F8C6008CED35 /* CollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E5793D61F74F8C6008CED35 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E5793D71F74F8D5008CED35 /* CryptoCollectionViewCell */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9E5793D71F74F8D5008CED35 /* CryptoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E5793D21F74F8C0008CED35 /* CryptoCollectionViewCell.swift */,
+				9E5793D31F74F8C0008CED35 /* CryptoCollectionViewCell.xib */,
+			);
+			path = CryptoCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		9E850F6E1F741B9200C45352 /* Storyboards */ = {
@@ -136,6 +215,28 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		9EAED89F1F74FC7F00802651 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9EAED8A61F74FC9100802651 /* Proxima Nova Alt */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9EAED8A61F74FC9100802651 /* Proxima Nova Alt */ = {
+			isa = PBXGroup;
+			children = (
+				9EAED8A01F74FC8B00802651 /* Mark Simonson - Proxima Nova Alt Black-webfont.ttf */,
+				9EAED8A21F74FC8C00802651 /* Mark Simonson - Proxima Nova Alt Bold-webfont.ttf */,
+				9EAED8A41F74FC8E00802651 /* Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.ttf */,
+				9EAED8A51F74FC8F00802651 /* Mark Simonson - Proxima Nova Alt Regular-webfont.ttf */,
+				9EAED8A31F74FC8D00802651 /* Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf */,
+				9EAED8A11F74FC8C00802651 /* Mark Simonson - Proxima Nova Semibold-webfont.ttf */,
+				9EAED8A71F74FC9100802651 /* Mark Simonson - Proxima Nova Thin-webfont.ttf */,
+			);
+			path = "Proxima Nova Alt";
+			sourceTree = "<group>";
+		};
 		9EEDF9C51F73BA2F00D32D52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,9 +253,10 @@
 			children = (
 				9EEDF9CE1F73BE7500D32D52 /* APIManager.swift */,
 				9E850F701F74232600C45352 /* APIError.swift */,
-				9EEDF9F81F73C75D00D32D52 /* JSON.swift */,
+				9E5793CA1F74DD50008CED35 /* APIResponse */,
 				9EEDF9D91F73BF7E00D32D52 /* Private */,
 				9EEDF9D61F73BF4400D32D52 /* Public */,
+				9E5793CD1F74DEBE008CED35 /* JSONDictionary.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -225,6 +327,7 @@
 					9E412CB61F73B760004765F8 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = RJA42UD9TG;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -253,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E412CC51F73B760004765F8 /* LaunchScreen.storyboard in Resources */,
+				9E5793D51F74F8C0008CED35 /* CryptoCollectionViewCell.xib in Resources */,
 				9E412CC21F73B760004765F8 /* Assets.xcassets in Resources */,
 				9E412CC01F73B760004765F8 /* Main.storyboard in Resources */,
 			);
@@ -284,20 +388,28 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BxTrader/Pods-BxTrader-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+<<<<<<< Updated upstream
+=======
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+>>>>>>> Stashed changes
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+<<<<<<< Updated upstream
+=======
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -329,20 +441,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5793CC1F74DD68008CED35 /* CreateOrderResponse.swift in Sources */,
 				9EEDF9CF1F73BE7500D32D52 /* APIManager.swift in Sources */,
+				9E16D3971F74FB35000F9C28 /* MakeOrderModels.swift in Sources */,
 				9EEDF9CB1F73BC6200D32D52 /* OrderBook.swift in Sources */,
 				9E850F751F742BAE00C45352 /* OrderBookingPair.swift in Sources */,
+				9E5793D41F74F8C0008CED35 /* CryptoCollectionViewCell.swift in Sources */,
 				9EEDF9EB1F73C17800D32D52 /* RemoteWallet.swift in Sources */,
 				9EEDF9D11F73BEB000D32D52 /* RemoteTicker.swift in Sources */,
 				9E850F781F7437E000C45352 /* Double+RoundTo.swift in Sources */,
 				9EEDF9D51F73BF3200D32D52 /* RemoteOrderBooking.swift in Sources */,
-				9E412CBD1F73B760004765F8 /* ViewController.swift in Sources */,
-				9EEDF9F91F73C75D00D32D52 /* JSON.swift in Sources */,
+				9E5793CE1F74DEBE008CED35 /* JSONDictionary.swift in Sources */,
+				9E16D39A1F74FB35000F9C28 /* MakeOrderViewController.swift in Sources */,
 				9EEDF9C91F73BBC500D32D52 /* Ticker.swift in Sources */,
 				9E850F711F74232600C45352 /* APIError.swift in Sources */,
+				9E16D3991F74FB35000F9C28 /* MakeOrderRouter.swift in Sources */,
 				9EEDF9E31F73BFC900D32D52 /* RemoteTransactionHistory.swift in Sources */,
+				9E16D3961F74FB35000F9C28 /* MakeOrderInteractor.swift in Sources */,
 				9E412CBB1F73B760004765F8 /* AppDelegate.swift in Sources */,
+				9E16D3981F74FB35000F9C28 /* MakeOrderPresenter.swift in Sources */,
 				9EEDF9E91F73C01300D32D52 /* RemoteOrder.swift in Sources */,
+				9E16D39B1F74FB35000F9C28 /* MakeOrderWorker.swift in Sources */,
 				9EEDF9D81F73BF6300D32D52 /* RemoteRecentTrade.swift in Sources */,
 				9EEDF9C71F73BA6E00D32D52 /* Pairing.swift in Sources */,
 				9EEDF9D31F73BEE000D32D52 /* RemoteCurrencyPairing.swift in Sources */,
@@ -471,10 +590,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RJA42UD9TG;
 				INFOPLIST_FILE = BxTrader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dekablade01.me.BxTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -485,10 +606,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RJA42UD9TG;
 				INFOPLIST_FILE = BxTrader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dekablade01.me.BxTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

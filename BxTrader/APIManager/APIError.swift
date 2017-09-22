@@ -8,16 +8,11 @@
 
 import Foundation
 
-enum APIError: LocalizedError {
-    case requestFailure
-    case parsingFailure
-    case customError
-    
-    var errorDescription: String? {
-        switch self {
-        case .requestFailure: return "Request Failure"
-        case .customError: return "CustomError"
-        case .parsingFailure: return "Parsing Error"
-        }
+struct APIError: Error {
+    var customError: String
+    init(errorDescription: String) {
+        customError = errorDescription
     }
 }
+
+
