@@ -9,6 +9,11 @@ target 'BxTrader' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'CryptoSwift'
+<<<<<<< Updated upstream
+=======
+  pod 'SwiftyJSON'
+  pod 'SnapKit'
+>>>>>>> Stashed changes
   # Pods for BxTrader
 
 end

@@ -17,10 +17,10 @@ class RemoteTicker: NSObject {
                 if (response.result.isFailure) {
                     return;
                 }
-                guard let responseValue = response.result.value as? JSON else { return }
+                guard let responseValue = response.result.value as? [String:Any] else { return }
                 var tickers: [Ticker] = []
                 for (_, value) in responseValue {
-                    if let tickerResponse = value as? JSON {
+                    if let tickerResponse = value as? [String:Any] {
                         if let ticker = Ticker(JSON: tickerResponse) {
                             tickers.append(ticker)
                         }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark Simonson - Proxima Nova Alt Regular-webfont.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CryptoCollectionViewCell" customModule="BxTrader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nql-AA-EhP">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwM-qz-aJ0">
+                                <rect key="frame" x="20" y="31.5" width="42" height="19"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="17"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.59607843140000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fwM-qz-aJ0" firstAttribute="centerX" secondItem="nql-AA-EhP" secondAttribute="centerX" id="9cu-Y8-YIm"/>
+                            <constraint firstItem="fwM-qz-aJ0" firstAttribute="centerY" secondItem="nql-AA-EhP" secondAttribute="centerY" id="NuO-dV-wOg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nql-AA-EhP" secondAttribute="trailing" id="7KO-cc-kV8"/>
+                <constraint firstItem="nql-AA-EhP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="O40-2k-KJd"/>
+                <constraint firstItem="nql-AA-EhP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zah-Up-KTi"/>
+                <constraint firstAttribute="bottom" secondItem="nql-AA-EhP" secondAttribute="bottom" id="k9Z-Cy-qkk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="245" height="217"/>
+            <connections>
+                <outlet property="circleView" destination="nql-AA-EhP" id="tf1-Z6-xhl"/>
+                <outlet property="secondaryCurrencyLabel" destination="fwM-qz-aJ0" id="kzr-w9-ZkI"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="137"/>
+        </collectionViewCell>
+    </objects>
+</document>

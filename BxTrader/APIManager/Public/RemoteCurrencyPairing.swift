@@ -20,15 +20,15 @@ class RemoteCurrencyPairing {
                     observer.onError(response.result.error!)
                     observer.onCompleted()
                 }
-                if let responseValue = response.result.value as? JSON {
+                if let responseValue = response.result.value as? [String:Any] {
                     var pairings:[Pairing] = []
                     for (_, value) in responseValue {
-                        if let pairingResponse = value as? JSON {
+                        if let pairingResponse = value as? [String:Any] {
                             if let pairingObject = Pairing(JSON: pairingResponse) {
                                 pairings.append(pairingObject)
                             }
                         } else {
-                            observer.onError(APIError.parsingFailure)
+                            observer.onError(APIError(errorDescription: ""))
                             observer.onCompleted()
                         }
                     }
