@@ -128,4 +128,17 @@ fastlane/screenshots
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+
+# Created by https://www.gitignore.io/api/buck
+
+### Buck ###
+buck-out/
+.buckconfig.local
+.buckd/
+.buckversion
+.fakebuckversion
+
+
+# End of https://www.gitignore.io/api/buck
+
 # End of https://www.gitignore.io/api/macos,swift,xcode,fastlane,cocoapods
