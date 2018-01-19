@@ -27,4 +27,6 @@
 [apple]
   xctool_zip_target = //third-party/ios/xctool:xctool-minimal-zip
 
-
+[swift]
+  version = 4.0
+  compiler_flags = -DBUCK -whole-module-optimization -enable-testing -suppress-warnings
