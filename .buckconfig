@@ -30,3 +30,8 @@
 [swift]
   version = 4.0
   compiler_flags = -DBUCK -whole-module-optimization -enable-testing -suppress-warnings
+
+[project]
+ide_force_kill = never
+
+

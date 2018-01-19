@@ -1,6 +1,6 @@
 apple_resource(
   name = 'BxTraderResources',
-  files = glob(['*.png', '*.storyboard']),
+  files = glob(['**/**/*.png', '**/**/*.storyboard', '**/**/*.xib']),
   dirs = [],
 )
 
